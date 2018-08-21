@@ -38,7 +38,7 @@ protected void gravar(HttpServletRequest request, HttpServletResponse response) 
 		
 		try {
 			new PessoaDao().create(p);
-			request.setAttribute("msg", "Dados Gravados");
+			request.setAttribute("msg", "Dados Gravados com sucesso!");
 		} catch (Exception ex) {
 			request.setAttribute("msg", "Error: " + ex.getMessage());
 		} finally {
